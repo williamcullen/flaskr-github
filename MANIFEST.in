@@ -1,0 +1,8 @@
+graft flaskr/templates
+graft flaskr/static
+include flaskr/schema.sql
+
+set FLASK_APP=flaskr.flaskr.
+set FLASK_APP=flaskr
+set FLASK_DEBUG=true
+flask run
