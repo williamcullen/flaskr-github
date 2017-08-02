@@ -1,11 +1,13 @@
 # _*_ encoding:utf-8 _*_
 # all the imports
-import os
 import sys
-import sqlite3
-import MySQLdb
-from flask import Flask, request, session, g, redirect, url_for, abort, \
+
+from flask import Flask, request, session, redirect, url_for, abort, \
     render_template, flash
+from sqlalchemy import Table, Column, Integer, String, select, create_engine, MetaData
+
+from config import conn
+from models import news
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -20,71 +22,27 @@ app.config.update(dict(
 ))
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
+engine = create_engine("mysql://root:root@localhost:3306/common?charset=utf8", encoding="utf-8", echo=True)
+metadata = MetaData()
 
-#
-#
-# def connect_db():
-#     """Connects to the specific database."""
-#     rv = sqlite3.connect(app.config['DATABASE'])
-#     rv.row_factory = sqlite3.Row
-#     return rv
-#
-#
-# def get_db():
-#     """Opens a new database connection if there is none yet for the
-#     current application context.
-#     """
-#     if not hasattr(g, 'sqlite_db'):
-#         g.sqlite_db = connect_db()
-#     return g.sqlite_db
-#
-#
-# @app.teardown_appcontext
-# def close_db(error):
-#     """Closes the database again at the end of the request."""
-#     if hasattr(g, 'sqlite_db'):
-#         g.sqlite_db.close()
-#
-#
-# def init_db():
-#     db = get_db()
-#     with app.open_resource('schema.sql', mode='r') as f:
-#         db.cursor().executescript(f.read())
-#     db.commit()
-#
-#
-# @app.cli.command('initdb')
-# def initdb_command():
-#     """Initializes the database."""
-#     init_db()
-#     print('Initialized the database.')
-def connectdb():
-    try:
-        global conn
-        conn = MySQLdb.connect(host='localhost', user='root', passwd='root', db='common', charset="utf8")
-    except Exception as e:
-        print e
-        sys.exit()
+# 定义表
+news = Table('news', metadata,
+             Column('id', Integer, primary_key=True),
+             Column('title', String(128)),
+             Column('text', String(1280)),
+             )
 
-
-def cursordb():
-    global cursor
-    cursor = conn.cursor()
-
-
-def closedb():
-    conn.close()
-    cursor.close()
+# 创建数据表，如果数据表存在，则忽视
+metadata.create_all(engine)
+# 获取数据库连接
+conn = engine.connect()
 
 
 @app.route('/')
 def show_entries():
-    connectdb()
-    cursordb()
-    sql = "SELECT title, text FROM entries ORDER BY id DESC"
-    cursor.execute(sql)
-    entries = cursor.fetchall()
-    closedb()
+    s = select([news.c.title, news.c.text]).order_by(news.c.id.desc())
+    result = conn.execute(s)
+    entries = result.fetchall()
     return render_template('show_entries.html', entries=entries)
 
 
@@ -93,16 +51,10 @@ def add_entry():
     if not session.get('logged_in'):
         abort(401)
 
-    connectdb()
-    cursordb()
-    try:
-        sql = "INSERT INTO entries (title, text) VALUES ('%s','%s')" % (request.form['title'], request.form['text'])
-        cursor.execute(sql)
-    except Exception as e:
-        print e
-        print '这儿错了'
-    conn.commit()
-    closedb()
+    i = news.insert()
+    u=dict(title=request.form['title'], text=request.form['text'])
+    result = conn.execute(i, **u)
+    result.inserted_primary_key
     flash('文章发布成功')
     return redirect(url_for('show_entries'))
 
