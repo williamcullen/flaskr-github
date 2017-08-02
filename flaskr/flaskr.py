@@ -61,7 +61,7 @@ app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 def connectdb():
     try:
         global conn
-        conn = MySQLdb.connect(host='localhost', user='root', passwd='root', db='common')
+        conn = MySQLdb.connect(host='localhost', user='root', passwd='root', db='common', charset="utf8")
     except Exception as e:
         print e
         sys.exit()
@@ -70,7 +70,6 @@ def connectdb():
 def cursordb():
     global cursor
     cursor = conn.cursor()
-
 
 
 def closedb():

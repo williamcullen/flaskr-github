@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/flaskr$test_flaskr.coverage" NAME="test_flaskr Coverage Results" MODIFIED="1501577221364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/flaskr$Unittests_for_test_test_flaskr_FlaskrTestCase_test_empty_db.coverage" NAME="Unittests for test.test_flaskr.FlaskrTestCase.test_empty_db Coverage Results" MODIFIED="1499244946502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskr$maindemo.coverage" NAME="maindemo Coverage Results" MODIFIED="1499307100262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1501640080413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1501642046020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -60,17 +60,17 @@
       <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1783">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="348">
+              <caret line="63" column="105" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="105" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="false" />
-                <marker date="1501640080262" expanded="true" signature="1758:1789" ph="SELECT title... entries" />
-                <marker date="1501640080262" expanded="true" signature="1758:1806" ph="SELECT title... entries" />
-                <marker date="1501640080262" expanded="true" signature="1830:1831" ph="SELECT title... entries" />
-                <marker date="1501640080262" expanded="true" signature="2111:2163" ph="INSERT INTO entries... " />
-                <marker date="1501640080262" expanded="true" signature="2111:2164" ph="INSERT INTO entries... " />
-                <marker date="1501640080262" expanded="true" signature="2111:2191" ph="SELECT title... entries" />
+                <marker date="1501642045802" expanded="true" signature="1773:1804" ph="SELECT title... entries" />
+                <marker date="1501642045802" expanded="true" signature="1773:1821" ph="SELECT title... entries" />
+                <marker date="1501642045802" expanded="true" signature="1845:1846" ph="SELECT title... entries" />
+                <marker date="1501642045802" expanded="true" signature="2126:2178" ph="INSERT INTO entries... " />
+                <marker date="1501642045802" expanded="true" signature="2126:2179" ph="INSERT INTO entries... " />
+                <marker date="1501642045802" expanded="true" signature="2126:2206" ph="SELECT title... entries" />
               </folding>
             </state>
           </provider>
@@ -664,7 +664,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4424581" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4424581" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -703,12 +703,12 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#456#457#0" expanded="false" />
-            <marker date="1501640080262" expanded="true" signature="1758:1789" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1758:1806" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1830:1831" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="2111:2163" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2164" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2191" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1804" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1821" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1845:1846" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="2126:2178" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2179" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2206" ph="SELECT title... entries" />
           </folding>
         </state>
       </provider>
@@ -732,12 +732,12 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#456#457#0" expanded="false" />
-            <marker date="1501640080262" expanded="true" signature="1758:1789" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1758:1806" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1830:1831" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="2111:2163" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2164" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2191" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1804" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1821" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1845:1846" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="2126:2178" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2179" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2206" ph="SELECT title... entries" />
           </folding>
         </state>
       </provider>
@@ -749,12 +749,12 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#456#457#0" expanded="false" />
-            <marker date="1501640080262" expanded="true" signature="1758:1789" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1758:1806" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1830:1831" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="2111:2163" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2164" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2191" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1804" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1821" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1845:1846" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="2126:2178" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2179" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2206" ph="SELECT title... entries" />
           </folding>
         </state>
       </provider>
@@ -1091,17 +1091,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1783">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="348">
+          <caret line="63" column="105" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="105" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#456#457#0" expanded="false" />
-            <marker date="1501640080262" expanded="true" signature="1758:1789" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1758:1806" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="1830:1831" ph="SELECT title... entries" />
-            <marker date="1501640080262" expanded="true" signature="2111:2163" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2164" ph="INSERT INTO entries... " />
-            <marker date="1501640080262" expanded="true" signature="2111:2191" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1804" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1773:1821" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="1845:1846" ph="SELECT title... entries" />
+            <marker date="1501642045802" expanded="true" signature="2126:2178" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2179" ph="INSERT INTO entries... " />
+            <marker date="1501642045802" expanded="true" signature="2126:2206" ph="SELECT title... entries" />
           </folding>
         </state>
       </provider>
